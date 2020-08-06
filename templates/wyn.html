@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wyn ORM</title>
+</head>
+<body>
+<h1>django ORM</h1>
+<br>
+{% if all_list %}
+    <table border="1">
+        <thead>
+            <TR>
+                <TH>姓名</TH>
+                <TH>年龄</TH>
+            </TR>
+        </thead>
+        <tbody>
+            {% for j in all_list %}
+                <tr>
+                <td>{{ j.name }}</td>
+                <td>{{ j.age }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+<br>
+<form method="post" action="/add_use/">
+    <label>姓名</label>
+    <input type="text" name="name" >
+    <label>年龄</label>
+    <input type="text" name="age" >
+    <input type=submit value="submit">
+</form>
+</body>
+</html>
