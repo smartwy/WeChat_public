@@ -2,7 +2,7 @@ from django.shortcuts import render
 from wcp_app import models
 
 # Create your views here. 
-# test git push
+# test git push this is banch
 def v_orm(request):
 	name = request.POST.get('name')
 	age = request.POST.get('age')
